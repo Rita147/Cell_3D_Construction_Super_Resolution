@@ -18,4 +18,4 @@ EDSR: Tried both custom-trained and OpenCV pretrained versions.
 
 SRDFN: Fully implemented and trained for this project.
 
-All models were evaluated using PSNR/SSIM. EDSR and SRDFN gave the best results for structure preservation.
+All models were evaluated using PSNR/SSIM. LapSRN gave the best results for structure preservation.
