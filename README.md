@@ -9,6 +9,7 @@ EDSR (OpenCV): Used OpenCV’s built-in LapSRN model with pretrained weights.
 LapSRN (OpenCV): Used OpenCV’s built-in LapSRN model with pretrained weights.
 
 🔧 Custom-Trained Models
+
 SRCNN: Implemented and trained from scratch.
 
 ESPCN: Implemented from scratch based on the original paper.
