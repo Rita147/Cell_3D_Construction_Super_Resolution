@@ -1,21 +1,26 @@
-🧪 Super-Resolution Methods Used
-We applied several SR methods to enhance histopathology images before segmentation and 3D reconstruction:
+Super Resolution Model Evaluation
+Dataset and Preprocessing
+The original image dimensions were 512x512. To better observe the effect of super resolution, the images were downsampled to 256x256 using a downsampling technique. All models were trained and evaluated on these downsampled images.
 
-✅ Pretrained Models
+Trained Models
+The following models were trained for 50 epochs:
 
-EDSR (OpenCV): Used OpenCV’s built-in LapSRN model with pretrained weights.
+SRDF
 
+SRCNN
 
-LapSRN (OpenCV): Used OpenCV’s built-in LapSRN model with pretrained weights.
+EDSR
 
-🔧 Custom-Trained Models
+ESPCN
 
-SRCNN: Implemented and trained from scratch.
+The trained models are saved and available for use.
 
-ESPCN: Implemented from scratch based on the original paper.
+Pre-trained Models
+In addition to the trained models, two pre-trained models—LapSRN and EDSR—were also tested.
 
-EDSR: Tried both custom-trained and OpenCV pretrained versions.
+Results
+The EDSR model provided the best results among all tested models. Both the OpenCV pre-trained EDSR model and the custom-trained EDSR model produced highly successful outcomes.
 
-SRDFN: Fully implemented and trained for this project.
-
-All models were evaluated using PSNR/SSIM. LapSRN gave the best results for structure preservation.
+Usage
+All models are available and ready to use in the ready_whole_models directory.
+This directory also includes example usage scripts to help you get started quickly.
